@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class ProductsController(StoreContext context,ILogger<ProductsController> logger) : ControllerBase{
     [HttpGet]
     public async Task<ActionResult<List<Product>>> GetAll(){
