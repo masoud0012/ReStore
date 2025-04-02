@@ -1,6 +1,25 @@
-@API_HostAddress = http://localhost:5009
+@API_HostAddress = http://localhost:5000/api
 
-GET {{API_HostAddress}}/weatherforecast/
+GET {{API_HostAddress}}/products
+Accept: application/json
+
+###
+
+
+GET {{API_HostAddress}}/GetBaskets
+Accept: application/json
+
+###
+
+POST {{API_HostAddress}}/AddItemToBasket
+header name: header value
+
+content 
+Accept: application/json
+
+###
+
+GET {{API_HostAddress}}/RemoveBasketItem
 Accept: application/json
 
 ###

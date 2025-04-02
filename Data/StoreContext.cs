@@ -9,4 +9,6 @@ public class StoreContext:DbContext
     {
     }
     public DbSet<Product> Products { get; set; }
+    public DbSet<Basket> baskets    {get;set;}
+    
 }
